@@ -1,0 +1,22 @@
+{
+  "name": "semanticuiproject",
+  "version": "1.0.0",
+  "description": "My first try at semantic UI tools",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edwinwkuria/SemanticUIProject.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/edwinwkuria/SemanticUIProject/issues"
+  },
+  "homepage": "https://github.com/edwinwkuria/SemanticUIProject#readme",
+  "dependencies": {
+    "fomantic-ui": "^2.7.5"
+  }
+}
