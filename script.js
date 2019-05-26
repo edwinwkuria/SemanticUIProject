@@ -5,3 +5,8 @@ $('.ui.dropdown.item')
 $('.four.nested.cards .image').dimmer({
     on: 'hover'
   });
+
+  $('.dropdown')
+  .dropdown()
+;
+

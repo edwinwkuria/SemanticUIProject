@@ -9,7 +9,7 @@
           <!-- This is the menu tab -->
           <div class="ui attached stackable inverted menu">
                 <div class="item"><img src="images/logo.png"></div>
-                <a class="item">Home </a>
+                  <a class="item" href="index.html">Home </a>
                 <div class="ui dropdown item">
                   Categories
                   <i class="dropdown icon"></i>
@@ -20,30 +20,42 @@
                   </div>
                 </div>
                 <div class="right menu">
-                  <a class="item">Log in </a>
-                  <a class="item">Sign up</a>
+                  <a class="item" href="#">Log in </a>
+                  <a class="item" href="signup.html">Sign up</a>
                 </div>
               </div>
         <!-- This is the log in segment-->
-    <div class="ui container">
-        <div class="ui segment">
+        
+        <div class="ui centered inverted card">
+            <div class="ui card">
+                <div class="content">
+                  <div class="center aligned header">Sign In</div>
+                </div>
+                <div class="center aligned">
+                <i class="massive user circle icon"></i>
+                </div>
+                <div class="content">
                 <div class="ui form">
-                  
-                    <div class="field">
-                      <label>Username</label>
-                      <input placeholder="Username" type="text">
-                    </div>
-
-                    <div class="field">
-                      <label>Password</label>
-                      <input placeholder="Password" type="Password">
-                    </div>
+                <div class="fifteen wide field">
+                    <label>Username</label>
+                    <input placeholder="Username" type="text">
                   </div>
 
-                  <div class="ui submit button">Sign In</div>
-                
+                  <div class="fifteen wide field">
+                    <label>Password</label>
+                    <input placeholder="Password" type="Password">
+                  </div>
+                  <div class="ui description">
+                   <a href="#">Forgot your password</a>
+                  </div>
+                </div>
+                <div class="center aligned extra content">
+                <div class="ui field ">
+                  <button class="ui primary button" type="submit">Submit </button>
+                </div>
+                </div>
+                </div>
               </div>
-            </div>
         </div>
 </body>
 </html>
