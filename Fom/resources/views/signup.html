@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<head>
+    <title>Semantic UI</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.js"></script>
+</head>
+<body>
+        <!-- This is the menu tab -->
+        <div class="ui attached stackable inverted menu">
+            <div class="item"><img src="images/logo.png"></div>
+                <a class="item" href="index.html">Home </a>
+            <div class="ui dropdown item">
+                Categories
+                <i class="dropdown icon"></i>
+                <div class="menu">
+                <div class="item">Concerts</div>
+                <div class="item">Expos</div>
+                <div class="item">Festivals</div>
+                </div>
+            </div>
+            <div class="right menu">
+                <a class="item" href="login.html">Log in </a>
+                <a class="item" href="#">Sign up</a>
+            </div>
+            </div>
+        <!-- This is the sign up tab-->
+        <div class="ui centered grid">
+          <div class="eight wide column">
+            <fieldset>
+              <form class="ui form">
+                <!--This is the steps Header-->
+                <div class="ui mini fluid steps">
+                  <div class="active step">
+                    <i class="user icon"></i>
+                    <div class="content">
+                      <div class="title">Create an account </div>
+                      <div class="description">Create your user account</div>
+                    </div>
+                  </div>
+                  <div class="disabled step">
+                    <i class="tasks icon"></i>
+                    <div class="content">
+                      <div class="title">Preferences </div>
+                      <div class="description">Select your Preferences</div>
+                    </div>
+                  </div>
+                </div>
+                <!-- This is the sign up form-->
+                <div class="field">
+                  <label>Name</label>
+                  <div class="two fields">
+                    <div class="field">
+                      <input type="text" name="shipping[first-name]" placeholder="First Name">
+                    </div>
+                    <div class="field">
+                      <input type="text" name="shipping[last-name]" placeholder="Last Name">
+                    </div>
+                  </div>
+                </div>
+                <div class="field">
+                  <label>Email</label>
+                  <div class="fields">
+                    <div class="twelve wide field">
+                      <input type="text" name="shipping[address]" placeholder="Email">
+                    </div>
+                  </div>
+                </div>
+                <div class="fields">
+                  <div class="seven wide field">
+                    <label>County</label>
+                    <input type="text" name="card[number]" maxlength="16" placeholder="County">
+                  </div>
+                  <div class="three wide field">
+                    <label>Date of Birth</label>
+                    <input type="text" name="card[cvc]" maxlength="3" placeholder="Date">
+                  </div>
+                  <div class="six wide field">
+                    <label>Month</label>
+                    <div class="two fields">
+                      <div class="field">
+                        <select class="ui fluid search dropdown" name="card[expire-month]">
+                          <option value="">Month</option>
+                          <option value="1">January</option>
+                          <option value="2">February</option>
+                          <option value="3">March</option>
+                          <option value="4">April</option>
+                          <option value="5">May</option>
+                          <option value="6">June</option>
+                          <option value="7">July</option>
+                          <option value="8">August</option>
+                          <option value="9">September</option>
+                          <option value="10">October</option>
+                          <option value="11">November</option>
+                          <option value="12">December</option>
+                        </select>
+                      </div>
+                      <div class="field">
+                        <input type="text" name="card[expire-year]" maxlength="4" placeholder="Year">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ui button" tabindex="0"><a href="signup2.html" >Create Account</a></div>
+              </form>
+            </fieldset>
+          </div>
+        </div>
+                  
+</body>
+</html>
