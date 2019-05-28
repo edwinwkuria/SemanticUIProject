@@ -6,8 +6,7 @@
       <img class="ui fluid image" src="images/poster.png">
     </div>
     <!-- This is the cards place holder-->
-    <div class="ui four column doubling stackable container">
-     <div class="ui cards">
+    <div class="ui four doubling stackable cards">
       <div class="card">
         <div class="blurring dimmable image">
           <div class="ui dimmer">
@@ -19,7 +18,7 @@
               </div>
             </div>
           </div>
-          <img src="images/event.jpeg">
+          <img src="images/event2.jpg">
           <a class="ui red ribbon label">MAY 24th </a>
             <i class="map pin icon"></i>
             Nyama Choma center
@@ -91,7 +90,7 @@
                 </div>
               </div>
             </div>
-            <img src="images/event.jpeg">
+            <img src="images/event2.jpg">
             <a class="ui red ribbon label">MAY 24th </a>
               <i class="map pin icon"></i>
               Nyama Choma center
@@ -139,7 +138,7 @@
                 </div>
               </div>
             </div>
-            <img src="images/event.jpeg">
+            <img src="images/event2.jpg">
             <a class="ui red ribbon label">MAY 24th </a>
               <i class="map pin icon"></i>
               Nyama Choma center
@@ -163,7 +162,7 @@
                 </div>
               </div>
             </div>
-            <img src="images/event.jpeg">
+            <img src="images/event2.jpg">
             <a class="ui red ribbon label">MAY 24th </a>
               <i class="map pin icon"></i>
               Nyama Choma center
@@ -202,6 +201,8 @@
         </div>
       </div>
       </div>
+    </div>
+    
     <!-- This is the footer-->
     <div class="ui fluid center aligned container">
     <div class="ui centered horizontal list">
