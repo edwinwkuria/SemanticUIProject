@@ -1,99 +1,235 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('layouts.app')
 
-        <title>Laravel</title>
-
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
-
-        <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Nunito', sans-serif;
-                font-weight: 200;
-                height: 100vh;
-                margin: 0;
-            }
-
-            .full-height {
-                height: 100vh;
-            }
-
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
-
-            .position-ref {
-                position: relative;
-            }
-
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
-
-            .content {
-                text-align: center;
-            }
-
-            .title {
-                font-size: 84px;
-            }
-
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 13px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
-
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Register</a>
-                        @endif
-                    @endauth
-                </div>
-            @endif
-
+@section('content')
+    <!--This is the placeholder for the container -->
+    <div class="ui container">
+      <img class="ui fluid image" src="images/poster.png">
+    </div>
+    <!-- This is the cards place holder-->
+    <div class="ui four column doubling stackable container">
+     <div class="ui cards">
+      <div class="card">
+        <div class="blurring dimmable image">
+          <div class="ui dimmer">
             <div class="content">
-                <div class="title m-b-md">
-                    Laravel
+              <div class="center">
+                <div class="description">
+                Join the best nyama choma hangout ever, do not even think about missing this. 
                 </div>
-
-                <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+              </div>
+            </div>
+          </div>
+          <img src="images/event.jpeg">
+          <a class="ui red ribbon label">MAY 24th </a>
+            <i class="map pin icon"></i>
+            Nyama Choma center
+        </div>
+          <div class="content">
+          <div class="header">Nyama Choma chill out</div>
+          </div>
+          <div class="ui bottom attached button">
+            <i class="add icon"></i>
+            Add Event
+          </div>
+        </div>
+      <div class="card">
+          <div class="blurring dimmable image">
+            <div class="ui dimmer">
+              <div class="content">
+                <div class="center">
+                  <div class="description">
+                  Join the best nyama choma hangout ever, do not even think about missing this. 
+                  </div>
                 </div>
+              </div>
+            </div>
+            <img src="images/event.jpeg">
+            <a class="ui red ribbon label">MAY 24th </a>
+              <i class="map pin icon"></i>
+              Nyama Choma center
+          </div>
+            <div class="content">
+            <div class="header">Nyama Choma chill out</div>
+            </div>
+            <div class="ui bottom attached button">
+              <i class="add icon"></i>
+              Add Event
             </div>
         </div>
-    </body>
-</html>
+      <div class="card">
+          <div class="blurring dimmable image">
+            <div class="ui dimmer">
+              <div class="content">
+                <div class="center">
+                  <div class="description">
+                  Join the best nyama choma hangout ever, do not even think about missing this. 
+                  </div>
+                </div>
+              </div>
+            </div>
+            <img src="images/event.jpeg">
+            <a class="ui red ribbon label">MAY 24th </a>
+              <i class="map pin icon"></i>
+              Nyama Choma center
+          </div>
+            <div class="content">
+            <div class="header">Nyama Choma chill out</div>
+            </div>
+            <div class="ui bottom attached button">
+              <i class="add icon"></i>
+              Add Event
+            </div>
+        </div>
+      <div class="card">
+          <div class="blurring dimmable image">
+            <div class="ui dimmer">
+              <div class="content">
+                <div class="center">
+                  <div class="description">
+                  Join the best nyama choma hangout ever, do not even think about missing this. 
+                  </div>
+                </div>
+              </div>
+            </div>
+            <img src="images/event.jpeg">
+            <a class="ui red ribbon label">MAY 24th </a>
+              <i class="map pin icon"></i>
+              Nyama Choma center
+          </div>
+            <div class="content">
+            <div class="header">Nyama Choma chill out</div>
+            </div>
+            <div class="ui bottom attached button">
+              <i class="add icon"></i>
+              Add Event
+            </div>
+        </div>
+      <div class="card">
+        <div class="blurring dimmable image">
+          <div class="ui dimmer">
+            <div class="content">
+              <div class="center">
+                <div class="description">
+                Join the best nyama choma hangout ever, do not even think about missing this. 
+                </div>
+              </div>
+            </div>
+          </div>
+          <img src="images/event.jpeg">
+          <a class="ui red ribbon label">MAY 24th </a>
+            <i class="map pin icon"></i>
+            Nyama Choma center
+        </div>
+          <div class="content">
+          <div class="header">Nyama Choma chill out</div>
+          </div>
+          <div class="ui bottom attached button">
+            <i class="add icon"></i>
+            Add Event
+          </div>
+        </div>
+      <div class="card">
+          <div class="blurring dimmable image">
+            <div class="ui dimmer">
+              <div class="content">
+                <div class="center">
+                  <div class="description">
+                  Join the best nyama choma hangout ever, do not even think about missing this. 
+                  </div>
+                </div>
+              </div>
+            </div>
+            <img src="images/event.jpeg">
+            <a class="ui red ribbon label">MAY 24th </a>
+              <i class="map pin icon"></i>
+              Nyama Choma center
+          </div>
+            <div class="content">
+            <div class="header">Nyama Choma chill out</div>
+            </div>
+            <div class="ui bottom attached button">
+              <i class="add icon"></i>
+              Add Event
+            </div>
+        </div>
+      <div class="card">
+          <div class="blurring dimmable image">
+            <div class="ui dimmer">
+              <div class="content">
+                <div class="center">
+                  <div class="description">
+                  Join the best nyama choma hangout ever, do not even think about missing this. 
+                  </div>
+                </div>
+              </div>
+            </div>
+            <img src="images/event.jpeg">
+            <a class="ui red ribbon label">MAY 24th </a>
+              <i class="map pin icon"></i>
+              Nyama Choma center
+          </div>
+            <div class="content">
+            <div class="header">Nyama Choma chill out</div>
+            </div>
+            <div class="ui bottom attached button">
+              <i class="add icon"></i>
+              Add Event
+            </div>
+        </div>
+      <div class="card">
+          <div class="blurring dimmable image">
+            <div class="ui dimmer">
+              <div class="content">
+                <div class="center">
+                  <div class="description">
+                  Join the best nyama choma hangout ever, do not even think about missing this. 
+                  </div>
+                </div>
+              </div>
+            </div>
+            <img src="images/event.jpeg">
+            <a class="ui red ribbon label">MAY 24th </a>
+              <i class="map pin icon"></i>
+              Nyama Choma center
+          </div>
+            <div class="content">
+            <div class="header">Nyama Choma chill out</div>
+            </div>
+            <div class="ui bottom attached button">
+              <i class="add icon"></i>
+              Add Event
+            </div>
+        </div>
+      </div>
+      </div>
+    <!-- This is the footer-->
+    <div class="ui fluid center aligned container">
+    <div class="ui centered horizontal list">
+    <div class="item">
+        <i class="users icon"></i>
+        <div class="content">
+          Created by Fom LLC
+        </div>
+      </div>
+      <div class="item">
+        <i class="marker icon"></i>
+        <div class="content">
+          Nairobi Ke
+        </div>
+      </div>
+      <div class="item">
+        <i class="mail icon"></i>
+        <div class="content">
+          <a href="mailto:info@fom.co.ke">info@fom.co.ke</a>
+        </div>
+      </div>
+      <div class="item">
+        <i class="linkify icon"></i>
+        <div class="content">
+          <a href="http://www.fom.co.ke">fom.co.ke</a>
+        </div>
+      </div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+@endsection
