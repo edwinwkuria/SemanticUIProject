@@ -12,16 +12,16 @@
                 <i class="massive user circle icon"></i>
                 </div>
                 <div class="content">
-                <div class="ui form" method="POST" action="{{ route('login') }}">
+                <form class="ui form" method="POST" action="{{ route('login') }}">
                     @csrf
                 <div class="fifteen wide field">
-                    <label>Username</label>
-                    <input placeholder="Username" type="text">
+                    <label>Email</label>
+                    <input placeholder="Email" type="text" name="email" id="email">
                   </div>
 
                   <div class="fifteen wide field">
                     <label>Password</label>
-                    <input placeholder="Password" type="Password">
+                    <input placeholder="Password" type="Password" name="password" id="password">
                   </div>
                   <div class="ui description">
                    <a href="#">Forgot your password</a>
@@ -29,11 +29,13 @@
                 </div>
                 <div class="center aligned extra content">
                 <div class="ui field ">
-                  <button class="ui primary button" type="submit">Sign in </button>
+                  <button type="submit" class="ui primary button" >Sign in </button>
+                
                   <div class="ui description">
-                    Don't have an account? Create one <a href="signup.html">here</a>
+                    Don't have an account? Create one <a href="{{ route('register')}}">here</a>
                   </div>
                 </div>
+                </form>
                 </div>
                 </div>
               </div>

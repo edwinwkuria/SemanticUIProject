@@ -26,16 +26,14 @@
           @if (Route::has('register'))
           <a class="item" href="{{ route('register') }}">Sign up</a>
           @endif
-        </div>
         @else
-        <a class="item" href="{{ route('logout') }}">Log out</a>
+        <a class="item" href="{{ route('logout') }}" onclick="event.preventDefault();document.getElementById('logout-form').submit();">Log out</a>
         <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
         @csrf
         </form>
         @endguest
+        </div>
       </div>
-      <div>
-      @yield('content')
-</div>
+@yield('content')
 </body>
 </html>

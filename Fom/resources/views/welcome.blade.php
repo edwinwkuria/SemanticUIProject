@@ -5,7 +5,6 @@
     <div class="ui container">
       <img class="ui fluid image" src="images/poster.png">
     </div>
-
     <!-- This is the cards place holder-->
     <div class="ui four column doubling stackable container">
      <div class="ui cards">

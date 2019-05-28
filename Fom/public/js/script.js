@@ -10,3 +10,8 @@ $('.four.nested.cards .image').dimmer({
   .dropdown()
 ;
 
+newFunction();
+function newFunction() {
+  onclick = event.preventDefault();
+  document.getElementById('logout-form').submit();
+}
