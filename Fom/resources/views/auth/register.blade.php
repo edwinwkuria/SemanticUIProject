@@ -29,12 +29,12 @@
                   <label>Name</label>
                   <div class="two fields">
                     <div class="field">
-                      <input type="text" name="name" id="name" placeholder="First Name" Required>
+                      <input type="text" name="firstname" id="firstname" placeholder="First Name" Required>
                     </div>
-                    <!--
+            
                     <div class="field">
                       <input type="text" name="lastname" id="lastname" placeholder="Last Name" Required>
-                    </div>-->
+                    </div>
                   </div>
                 </div>
                 <div class="field">
