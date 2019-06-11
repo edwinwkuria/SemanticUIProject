@@ -15,3 +15,9 @@ function newFunction() {
   onclick = event.preventDefault();
   document.getElementById('logout-form').submit();
 }
+$('.ui.calendar').calendar({
+  type: 'date'
+});
+$('.ui.checkbox')
+.checkbox()
+;
