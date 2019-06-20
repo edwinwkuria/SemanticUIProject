@@ -7,6 +7,7 @@
 </head>
 <body>
       <!-- This is the menu tab -->
+      <div class="ui sticky">
       <div class="ui attached stackable inverted menu">
         <div class="item"><img src="images/logo.png"></div>
         <a class="item" href="{{ url('/') }}">Home </a>
@@ -34,6 +35,7 @@
         </form>
         @endguest
         </div>
+      </div>
       </div>
 @yield('content')
 </body>

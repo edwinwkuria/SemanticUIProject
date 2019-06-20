@@ -21,3 +21,8 @@ $('.ui.calendar').calendar({
 $('.ui.checkbox')
 .checkbox()
 ;
+$('.ui.sticky')
+  .sticky({
+    context: '#context'
+  })
+;

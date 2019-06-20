@@ -44,11 +44,10 @@
             </div>
             <img src="images/event.jpeg">
             <a class="ui red ribbon label">MAY 24th </a>
-              <i class="map pin icon"></i>
-              Nyama Choma center
+              <i class="map pin icon"></i>25 characters max
           </div>
             <div class="content">
-            <div class="header">Nyama Choma chill out</div>
+            <div class="header">30 characters max</div>
             </div>
             <div class="ui bottom attached button">
               <i class="add icon"></i>
