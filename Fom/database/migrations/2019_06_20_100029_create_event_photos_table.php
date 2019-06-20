@@ -14,7 +14,10 @@ class CreateEventPhotosTable extends Migration
     public function up()
     {
         Schema::create('event_photos', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->bigIncrements('PhotosId');
+            $table->integer('EventId');
+            $table->foreign('EventId')-> references('id')-> on('events');
+            $table->string('filename');
             $table->timestamps();
         });
     }
