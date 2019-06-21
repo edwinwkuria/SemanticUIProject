@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use App\EventPhoto;
 
 class events extends Model
 {
@@ -11,8 +12,10 @@ class events extends Model
                             'Town',
                             'DateOfTheEvent',
                             'OrganizingCompany',
-                            'NameOfEvent',
                             'ContactEmail',
                             'Description'
                             ];
+    public function eventphoto(){
+        return $this -> hasOne('App\EventPhoto','PhotosId');
+    }
 }

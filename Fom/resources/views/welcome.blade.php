@@ -7,197 +7,32 @@
     </div>
     <!-- This is the cards place holder-->
     <div class="ui four doubling stackable cards">
+    @foreach ($events as $event)
       <div class="card">
         <div class="blurring dimmable image">
           <div class="ui dimmer">
             <div class="content">
               <div class="center">
                 <div class="description">
-                Join the best nyama choma hangout ever, do not even think about missing this. 
+                {{ $event -> Description}} 
                 </div>
               </div>
             </div>
           </div>
-          <img src="images/event2.jpg">
-          <a class="ui red ribbon label">MAY 24th </a>
+          <img src="{{ asset("/". $event -> eventphoto ->filename)}}">
+          <a class="ui red ribbon label">{{ $event -> DateOfTheEvent}} </a>
             <i class="map pin icon"></i>
-            Nyama Choma center
+            {{ $event -> VenueOfEvent}}
         </div>
           <div class="content">
-          <div class="header">Nyama Choma chill out</div>
+          <div class="header">{{ $event -> NameOfEvent}}</div>
           </div>
           <div class="ui bottom attached button">
             <i class="add icon"></i>
-            Add Event
+            register
           </div>
         </div>
-      <div class="card">
-          <div class="blurring dimmable image">
-            <div class="ui dimmer">
-              <div class="content">
-                <div class="center">
-                  <div class="description">
-                  Join the best nyama choma hangout ever, do not even think about missing this. 
-                  </div>
-                </div>
-              </div>
-            </div>
-            <img src="images/event.jpeg">
-            <a class="ui red ribbon label">MAY 24th </a>
-              <i class="map pin icon"></i>25 characters max
-          </div>
-            <div class="content">
-            <div class="header">30 characters max</div>
-            </div>
-            <div class="ui bottom attached button">
-              <i class="add icon"></i>
-              Add Event
-            </div>
-        </div>
-      <div class="card">
-          <div class="blurring dimmable image">
-            <div class="ui dimmer">
-              <div class="content">
-                <div class="center">
-                  <div class="description">
-                  Join the best nyama choma hangout ever, do not even think about missing this. 
-                  </div>
-                </div>
-              </div>
-            </div>
-            <img src="images/event.jpeg">
-            <a class="ui red ribbon label">MAY 24th </a>
-              <i class="map pin icon"></i>
-              Nyama Choma center
-          </div>
-            <div class="content">
-            <div class="header">Nyama Choma chill out</div>
-            </div>
-            <div class="ui bottom attached button">
-              <i class="add icon"></i>
-              Add Event
-            </div>
-        </div>
-      <div class="card">
-          <div class="blurring dimmable image">
-            <div class="ui dimmer">
-              <div class="content">
-                <div class="center">
-                  <div class="description">
-                  Join the best nyama choma hangout ever, do not even think about missing this. 
-                  </div>
-                </div>
-              </div>
-            </div>
-            <img src="images/event2.jpg">
-            <a class="ui red ribbon label">MAY 24th </a>
-              <i class="map pin icon"></i>
-              Nyama Choma center
-          </div>
-            <div class="content">
-            <div class="header">Nyama Choma chill out</div>
-            </div>
-            <div class="ui bottom attached button">
-              <i class="add icon"></i>
-              Add Event
-            </div>
-        </div>
-      <div class="card">
-        <div class="blurring dimmable image">
-          <div class="ui dimmer">
-            <div class="content">
-              <div class="center">
-                <div class="description">
-                Join the best nyama choma hangout ever, do not even think about missing this. 
-                </div>
-              </div>
-            </div>
-          </div>
-          <img src="images/event.jpeg">
-          <a class="ui red ribbon label">MAY 24th </a>
-            <i class="map pin icon"></i>
-            Nyama Choma center
-        </div>
-          <div class="content">
-          <div class="header">Nyama Choma chill out</div>
-          </div>
-          <div class="ui bottom attached button">
-            <i class="add icon"></i>
-            Add Event
-          </div>
-        </div>
-      <div class="card">
-          <div class="blurring dimmable image">
-            <div class="ui dimmer">
-              <div class="content">
-                <div class="center">
-                  <div class="description">
-                  Join the best nyama choma hangout ever, do not even think about missing this. 
-                  </div>
-                </div>
-              </div>
-            </div>
-            <img src="images/event2.jpg">
-            <a class="ui red ribbon label">MAY 24th </a>
-              <i class="map pin icon"></i>
-              Nyama Choma center
-          </div>
-            <div class="content">
-            <div class="header">Nyama Choma chill out</div>
-            </div>
-            <div class="ui bottom attached button">
-              <i class="add icon"></i>
-              Add Event
-            </div>
-        </div>
-      <div class="card">
-          <div class="blurring dimmable image">
-            <div class="ui dimmer">
-              <div class="content">
-                <div class="center">
-                  <div class="description">
-                  Join the best nyama choma hangout ever, do not even think about missing this. 
-                  </div>
-                </div>
-              </div>
-            </div>
-            <img src="images/event2.jpg">
-            <a class="ui red ribbon label">MAY 24th </a>
-              <i class="map pin icon"></i>
-              Nyama Choma center
-          </div>
-            <div class="content">
-            <div class="header">Nyama Choma chill out</div>
-            </div>
-            <div class="ui bottom attached button">
-              <i class="add icon"></i>
-              Add Event
-            </div>
-        </div>
-      <div class="card">
-          <div class="blurring dimmable image">
-            <div class="ui dimmer">
-              <div class="content">
-                <div class="center">
-                  <div class="description">
-                  Join the best nyama choma hangout ever, do not even think about missing this. 
-                  </div>
-                </div>
-              </div>
-            </div>
-            <img src="images/event.jpeg">
-            <a class="ui red ribbon label">MAY 24th </a>
-              <i class="map pin icon"></i>
-              Nyama Choma center
-          </div>
-            <div class="content">
-            <div class="header">Nyama Choma chill out</div>
-            </div>
-            <div class="ui bottom attached button">
-              <i class="add icon"></i>
-              Add Event
-            </div>
-        </div>
+        @endforeach
       </div>
       </div>
     </div>

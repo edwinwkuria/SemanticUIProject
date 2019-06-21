@@ -16,7 +16,8 @@ class EventsController extends Controller
      */
     public function index()
     {
-        return view('event');
+        $events = events::all();
+        return view ('welcome',compact('events'));
     }
 
     /**
@@ -24,26 +25,9 @@ class EventsController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create(UploadRequest $request)
+    public function create()
     {
-        $events= events::create($request->all());
-        
-            $filename = $request -> photo ->store('photos');
-            EventPhoto::create([
-                'EventId'=> $events -> id,
-                'NameOfEvent' => $request ->NameOfEvent,
-                'VenueOfEvent' =>$request ->VenueOfEvent,
-                'Town' => $request ->Town,
-                'DateOfTheEvent' => $request -> DateOfTheEvent,
-                'OrganizingCompany' =>$request-> OrganizingCompany,
-                'ContactEmail' => $request -> ContactEmail,
-                'Description' => $request ->Description,
-                //'Categories' => $Categories,
-                'filename' => $filename
-
-            ]);
-        return view('welcome');
-        
+        return view('event');
     }
 
     /**
@@ -52,9 +36,25 @@ class EventsController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(UploadRequest $request)
     {
-        //
+        $events= events::create($request->all());
+        
+        $filename = $request -> photo ->store('photos');
+        EventPhoto::create([
+            'EventId'=> $events -> id,
+            'NameOfEvent' => $request ->NameOfEvent,
+            'VenueOfEvent' =>$request ->VenueOfEvent,
+            'Town' => $request ->Town,
+            'DateOfTheEvent' => $request -> DateOfTheEvent,
+            'OrganizingCompany' =>$request-> OrganizingCompany,
+            'ContactEmail' => $request -> ContactEmail,
+            'Description' => $request ->Description,
+            //'Categories' => $Categories,
+            'filename' => $filename
+
+        ]);
+    return view('event');
     }
 
     /**
